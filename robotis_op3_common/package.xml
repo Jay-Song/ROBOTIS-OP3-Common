@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>robotis_op3_common</name>
   <version>0.1.1</version>
   <description>
     ROS packages for the ROBOTIS OP3 (meta package).
     This meta package provides launch files and plug-in for Gazebo and RViz.
   </description>
-  <license>Apache 2.0</license>
+  <license>Apache-2.0</license>
   <author email="sch@robotis.com">SCH</author>
   <author email="kmjung@robotis.com">Kayman</author>
   <maintainer email="pyo@robotis.com">Pyo</maintainer>
@@ -14,8 +14,8 @@
   <url type="emanual">http://emanual.robotis.com/docs/en/platform/op3/introduction/</url>
   <url type="repository">https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common</url>
   <url type="bugtracker">https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/issues</url>
-  <buildtool_depend>catkin</buildtool_depend>
-  <exec_depend>op3_description</exec_depend>
-  <exec_depend>op3_gazebo</exec_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>op3_description</depend>
+  <depend>op3_gazebo</depend>
   <export><metapackage/></export>
 </package>
