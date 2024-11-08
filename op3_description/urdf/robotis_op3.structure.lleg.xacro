@@ -1,10 +1,6 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!--
-  <xacro:property name="pi" value="3.141592654" />
-  -->
-
   <!-- left leg -->
   <xacro:macro name="robotis_op3_l_leg" params="parent">
 
@@ -24,9 +20,9 @@
     <visual>
       <xacro:insert_mesh_l_hip_yaw_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_hip_yaw_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_hip_yaw_link />
     </inertial>
@@ -48,9 +44,9 @@
     <visual>
       <xacro:insert_mesh_l_hip_roll_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_hip_roll_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_hip_roll_link />
     </inertial>
@@ -72,9 +68,9 @@
     <visual>
       <xacro:insert_mesh_l_hip_pitch_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_hip_pitch_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_hip_pitch_link />
     </inertial>
@@ -96,9 +92,9 @@
     <visual>
       <xacro:insert_mesh_l_knee_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_knee_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_knee_link />
     </inertial>
@@ -120,9 +116,9 @@
     <visual>
       <xacro:insert_mesh_l_ank_pitch_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_ank_pitch_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_ank_pitch_link />
     </inertial>
@@ -144,9 +140,9 @@
     <visual>
       <xacro:insert_mesh_l_ank_roll_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_ank_roll_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_ank_roll_link />
     </inertial>

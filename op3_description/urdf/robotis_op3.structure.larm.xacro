@@ -1,10 +1,6 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!--
-  <xacro:property name="pi" value="3.141592654" />
-  -->
-
   <!-- left leg -->
   <xacro:macro name="robotis_op3_l_arm" params="parent">
 
@@ -24,9 +20,9 @@
     <visual>
       <xacro:insert_mesh_l_sho_pitch_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_sho_pitch_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_sho_pitch_link />
     </inertial>
@@ -48,9 +44,9 @@
     <visual>
       <xacro:insert_mesh_l_sho_roll_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_sho_roll_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_sho_roll_link />
     </inertial>
@@ -72,9 +68,9 @@
     <visual>
       <xacro:insert_mesh_l_el_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_l_el_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_l_el_link />
     </inertial>

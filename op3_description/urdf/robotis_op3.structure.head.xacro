@@ -1,10 +1,6 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!--
-  <xacro:property name="pi" value="3.141592654" />
-  -->
-
   <!-- head -->
   <xacro:macro name="robotis_op3_head" params="parent">
 
@@ -24,9 +20,9 @@
     <visual>
       <xacro:insert_mesh_head_pan_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_head_pan_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_head_pan_link />
     </inertial>
@@ -48,9 +44,9 @@
     <visual>
       <xacro:insert_mesh_head_tilt_link />
     </visual>
-    <collision>
+    <!-- <collision>
       <xacro:insert_mesh_head_tilt_link />
-    </collision>
+    </collision> -->
     <inertial>
       <xacro:insert_inertia_head_tilt_link />
     </inertial>
