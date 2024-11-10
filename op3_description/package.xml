@@ -6,6 +6,7 @@
     The op3_description package
   </description>
   <license>Apache 2.0</license>
+  <author email="jay.hyunjong.song@nyu.edu">Jay</author>
   <author email="sch@robotis.com">SCH</author>
   <author email="kmjung@robotis.com">Kayman</author>
   <maintainer email="pyo@robotis.com">Pyo</maintainer>
