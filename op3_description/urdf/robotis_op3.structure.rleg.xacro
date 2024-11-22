@@ -23,6 +23,12 @@
     <!-- <collision>
       <xacro:insert_mesh_r_hip_yaw_link />
     </collision> -->
+    <collision>
+      <origin xyz="-0.001500 0.000000 -0.015500" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.045000 0.025000 0.031000"/>
+      </geometry>
+    </collision>
     <inertial>
       <xacro:insert_inertia_r_hip_yaw_link />
     </inertial>
@@ -47,6 +53,12 @@
     <!-- <collision>
       <xacro:insert_mesh_r_hip_roll_link />
     </collision> -->
+    <collision>
+      <origin xyz="0.003875 -0.002200 -0.012000" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.079750 0.042400 0.046500"/>
+      </geometry>
+    </collision>
     <inertial>
       <xacro:insert_inertia_r_hip_roll_link />
     </inertial>
@@ -71,6 +83,12 @@
     <!-- <collision>
       <xacro:insert_mesh_r_hip_pitch_link />
     </collision> -->
+    <collision>
+      <origin xyz="0.000425 0.018800 -0.059450" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.030850 0.046400 0.123900"/>
+      </geometry>
+    </collision>
     <inertial>
       <xacro:insert_inertia_r_hip_pitch_link />
     </inertial>
@@ -95,6 +113,12 @@
     <!-- <collision>
       <xacro:insert_mesh_r_knee_link />
     </collision> -->
+    <collision>
+      <origin xyz="0.000000 0.020000 -0.055000" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.030000 0.044000 0.115000"/>
+      </geometry>
+    </collision>
     <inertial>
       <xacro:insert_inertia_r_knee_link />
     </inertial>
@@ -119,6 +143,12 @@
     <!-- <collision>
       <xacro:insert_mesh_r_ank_pitch_link />
     </collision> -->
+    <collision>
+      <origin xyz="-0.020225 0.016800 0.012000" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.079750 0.042400 0.046500"/>
+      </geometry>
+    </collision>
     <inertial>
       <xacro:insert_inertia_r_ank_pitch_link />
     </inertial>
@@ -143,6 +173,12 @@
     <!-- <collision>
       <xacro:insert_mesh_r_ank_roll_link />
     </collision> -->
+    <collision>
+      <origin xyz="0.024000 -0.012500 -0.0265" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.127000 0.080000 0.008"/>
+      </geometry>
+    </collision>
     <inertial>
       <xacro:insert_inertia_r_ank_roll_link />
     </inertial>
