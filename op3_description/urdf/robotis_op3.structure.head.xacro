@@ -13,7 +13,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="head_pan" />
+  <!-- <xacro:insert_transmission name="head_pan" /> -->
 
   <!-- head yaw link -->
   <link name="head_pan_link">
@@ -23,6 +23,12 @@
     <!-- <collision>
       <xacro:insert_mesh_head_pan_link />
     </collision> -->
+    <collision>
+      <origin xyz="0.003750 0.000000 0.015500" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.032500 0.042000 0.031000"/>
+      </geometry>
+    </collision>
     <inertial>
       <xacro:insert_inertia_head_pan_link />
     </inertial>
@@ -37,7 +43,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="head_tilt" />
+  <!-- <xacro:insert_transmission name="head_tilt" /> -->
 
   <!-- head yaw link -->
   <link name="head_tilt_link">
@@ -47,6 +53,12 @@
     <!-- <collision>
       <xacro:insert_mesh_head_tilt_link />
     </collision> -->
+    <collision>
+      <origin xyz="0.006000 -0.019000 0.027750" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.044500 0.094000 0.078000"/>
+      </geometry>
+    </collision>
     <inertial>
       <xacro:insert_inertia_head_tilt_link />
     </inertial>

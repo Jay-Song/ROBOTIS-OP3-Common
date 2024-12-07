@@ -12,7 +12,8 @@
 
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.head.xacro" />
 
-  <xacro:include filename="$(find op3_description)/urdf/robotis_op3.transmissions.xacro" />
+  <!-- <xacro:include filename="$(find op3_description)/urdf/robotis_op3.gazebo.xacro" />  -->
+  <xacro:include filename="$(find op3_gazebo_ros2)/gazebo/robotis_op3.gazebo.xacro" /> 
 
   <link name="base"/>
 
@@ -30,6 +31,12 @@
   <!--    <collision> -->
   <!--      <xacro:insert_mesh_body_link /> -->
   <!--    </collision> -->
+    <collision>
+      <origin xyz="-0.016750 0 0.068250" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.11 0.12 0.135"/>
+      </geometry>
+    </collision>
     <inertial> 
       <xacro:insert_inertia_body_link />
     </inertial> 
@@ -45,5 +52,7 @@
 
   <!-- head links -->
   <xacro:robotis_op3_head parent="body_link" />  
+
+  <xacro:robotis_op3_gazebo/>
 
 </robot>
