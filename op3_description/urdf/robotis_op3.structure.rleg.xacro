@@ -13,7 +13,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_hip_yaw" />
+  <!-- <xacro:insert_transmission name="r_hip_yaw" /> -->
 
   <!-- right hip yaw link -->
   <link name="r_hip_yaw_link">
@@ -43,7 +43,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_hip_roll" />
+  <!-- <xacro:insert_transmission name="r_hip_roll" /> -->
 
   <!-- right hip roll link -->
   <link name="r_hip_roll_link">
@@ -73,7 +73,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_hip_pitch" />
+  <!-- <xacro:insert_transmission name="r_hip_pitch" /> -->
 
   <!-- right hip pitch link -->
   <link name="r_hip_pitch_link">
@@ -103,7 +103,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_knee" />
+  <!-- <xacro:insert_transmission name="r_knee" /> -->
 
   <!-- right hip pitch link -->
   <link name="r_knee_link">
@@ -133,7 +133,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_ank_pitch" />
+  <!-- <xacro:insert_transmission name="r_ank_pitch" /> -->
 
   <!-- right hip pitch link -->
   <link name="r_ank_pitch_link">
@@ -163,7 +163,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_ank_roll" />
+  <!-- <xacro:insert_transmission name="r_ank_roll" /> -->
 
   <!-- right hip roll link -->
   <link name="r_ank_roll_link">

@@ -13,7 +13,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_sho_pitch" />
+  <!-- <xacro:insert_transmission name="r_sho_pitch" /> -->
 
   <!-- right shoulder pitch link -->
   <link name="r_sho_pitch_link">
@@ -43,7 +43,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_sho_roll" />
+  <!-- <xacro:insert_transmission name="r_sho_roll" /> -->
 
   <!-- right shoulder roll link -->
   <link name="r_sho_roll_link">
@@ -73,7 +73,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="r_el" />
+  <!-- <xacro:insert_transmission name="r_el" /> -->
 
   <!-- right elbow link -->
   <link name="r_el_link">

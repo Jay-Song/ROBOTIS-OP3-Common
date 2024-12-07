@@ -164,113 +164,36 @@
     <mu2>0.2</mu2>
     <material>Gazebo/White</material>
     <selfCollide>false</selfCollide>
+  </gazebo> 
+  
+  <gazebo>
+  <plugin filename="gz-sim-joint-state-publisher-system" name = "gz::sim::systems::JointStatePublisher"> 
+    <topic>op3_gz_joint_states</topic>
+    <joint_name>r_sho_pitch</joint_name>
+    <joint_name>l_sho_pitch</joint_name>
+    <joint_name>r_sho_roll</joint_name>
+    <joint_name>l_sho_roll</joint_name>
+    <joint_name>r_el</joint_name>
+    <joint_name>l_el</joint_name>
+    <joint_name>r_hip_yaw</joint_name>
+    <joint_name>l_hip_yaw</joint_name>
+    <joint_name>r_hip_roll</joint_name>
+    <joint_name>l_hip_roll</joint_name>
+    <joint_name>r_hip_pitch</joint_name>
+    <joint_name>l_hip_pitch</joint_name>
+    <joint_name>r_knee</joint_name>
+    <joint_name>l_knee</joint_name>
+    <joint_name>r_ank_pitch</joint_name>
+    <joint_name>l_ank_pitch</joint_name>
+    <joint_name>r_ank_roll</joint_name>
+    <joint_name>l_ank_roll</joint_name>
+    <joint_name>head_pan</joint_name>
+    <joint_name>head_tilt</joint_name>
+  </plugin>
   </gazebo>
-
-<!--
-  <gazebo reference="l_hip_yaw">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="l_hip_roll">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="l_hip_pitch">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="l_knee">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="l_ank_roll">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="l_ank_pitch">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_hip_yaw">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_hip_roll">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_hip_pitch">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_knee">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_ank_roll">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_ank_pitch">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_sho_pitch">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_sho_roll">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="r_el">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="l_sho_pitch">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="l_sho_roll">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="l_el">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="head_pan">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
-
-  <gazebo reference="head_tilt">
-    <provideFeedback>1</provideFeedback>
-    <implicitSpringDamper>1</implicitSpringDamper>
-  </gazebo>
--->
 
   <!-- head camera -->
-
-  <gazebo reference="cam_gazebo_link">
+  <!-- <gazebo reference="cam_gazebo_link">
     <sensor name='camera' type='camera'>
       <pose>-0.050000 -0.010000 0.000000 -1.5708 0.000000 -3.141592</pose>
       <camera name='__default__'>
@@ -302,11 +225,11 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo>
+  </gazebo> -->
 
 
   <!-- imu sensor -->
-  <gazebo reference="body_link">
+  <!-- <gazebo reference="body_link">
     <gravity>true</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
@@ -324,6 +247,6 @@
       </plugin>
       <pose>0 0 0 0 0 0</pose>
     </sensor>
-  </gazebo>
+  </gazebo> -->
 
 </robot>

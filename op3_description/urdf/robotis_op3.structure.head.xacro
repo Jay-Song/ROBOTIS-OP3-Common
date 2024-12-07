@@ -13,7 +13,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="head_pan" />
+  <!-- <xacro:insert_transmission name="head_pan" /> -->
 
   <!-- head yaw link -->
   <link name="head_pan_link">
@@ -43,7 +43,7 @@
     <limit effort="1000" velocity="100" lower="${-pi*0.9}" upper="${pi*0.9}" />
     <dynamics damping="0.1" friction="0.0" />
   </joint>
-  <xacro:insert_transmission name="head_tilt" />
+  <!-- <xacro:insert_transmission name="head_tilt" /> -->
 
   <!-- head yaw link -->
   <link name="head_tilt_link">
